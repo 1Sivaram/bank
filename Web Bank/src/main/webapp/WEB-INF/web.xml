@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.bank.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/bank_login</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+  <exception-type>java.lang.Exception</exception-type>
+  <location>/error.jsp</location>
+  </error-page>
+  
+  <!-- <servlet>
+  	<servlet-name>de_ac</servlet-name>
+  	<servlet-class>com.bank.servlet.DeActivate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>de_ac</servlet-name>
+  	<url-pattern>/DeActivate</url-pattern>
+  </servlet-mapping>
+ -->  
+ <!--  <servlet>
+    <description></description>
+    <display-name>AddAccount</display-name>
+    <servlet-name>AddAccount</servlet-name>
+    <jsp-file>/addaccount.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddAccount</servlet-name>
+    <url-pattern>/AddAccount</url-pattern>
+  </servlet-mapping> -->
+  
+</web-app>
